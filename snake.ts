@@ -6,7 +6,6 @@ const rl = readline.createInterface({
     output: process.stdout
 })
 
-
 class SnakeGame {
     private readonly board: string[][]
     private readonly snake: number[][]
@@ -119,7 +118,7 @@ class SnakeGame {
                 _ ? keyListener(_.name) : ""
             }, 300)
             // _ ? keyListener(_.name) : ""
-            console.log(`key === ${key} _ === ${_}`)
+            console.log(`key === ${key} _ === ${JSON.stringify(_)}`)
         })
         // process.stdin.on('data', key => keyListener(key))
     }
